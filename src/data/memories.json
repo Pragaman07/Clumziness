@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "First Meeting",
+    "date": "2023-01-01",
+    "description": "The day our eyes met at the coffee shop. I knew there was something special about you.",
+    "mediaType": "image",
+    "mediaUrl": "https://placehold.co/600x400/png?text=First+Meeting",
+    "themeColor": "#FFD700"
+  },
+  {
+    "id": 2,
+    "title": "Our First Trip",
+    "date": "2023-06-15",
+    "description": "Driving down the coast with the wind in our hair. The sunset was almost as beautiful as you.",
+    "mediaType": "image",
+    "mediaUrl": "https://placehold.co/600x400/png?text=Road+Trip",
+    "themeColor": "#FF6B6B"
+  },
+  {
+    "id": 3,
+    "title": "A Special Dinner",
+    "date": "2023-12-25",
+    "description": "Christmas dinner under the stars. The food was great, but the company was perfect.",
+    "mediaType": "image",
+    "mediaUrl": "https://placehold.co/600x400/png?text=Dinner",
+    "themeColor": "#4ECDC4"
+  }
+]

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap');
+
+/* Font face for Swinton (Fallback to Playfair) */
+@font-face {
+  font-family: 'Swinton';
+  src: local('Swinton'), local('Swinton-Regular'), url('https://fonts.cdnfonts.com/s/12345/Swinton.woff') format('woff');
+  font-weight: 700;
+  /* Bold by default */
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Colors - Light Pastel & Black Theme */
+  --bg-gradient: linear-gradient(135deg, #FFD1DC 0%, #FFEFBA 50%, #FFFFFF 100%);
+
+  --text-primary: #000000;
+  /* Pure Black */
+  --text-secondary: #000000;
+  /* Also Black, maybe slightly lighter opacity if needed, but keeping bold */
+
+  --accent-gold: #000000;
+  /* Replacing Gold with Black for text, or dark gold for icons */
+  --accent-rose: #D6336C;
+  /* Pink for highlights */
+
+  --glass-bg: rgba(255, 255, 255, 0.4);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  /* Darker border for contrast */
+
+  /* Typography */
+  --font-heading: 'Swinton', 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: linear-gradient(135deg, #F43F5E 0%, #FFF1F2 100%);
+  background-attachment: fixed;
+  color: var(--text-color);
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  font-weight: 700;
+  /* Enforce global bold */
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  /* Extra bold for headers */
+  color: #000000;
+  /* Force Black */
+}
+
+p,
+span,
+div {
+  color: #000000;
+  /* Force Black */
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-rose);
+  border-radius: 4px;
+}
