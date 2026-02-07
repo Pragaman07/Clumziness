@@ -70,7 +70,11 @@ function App() {
           <OriginSection />
           <Timeline onUnlockReward={handleUnlockReward} />
           <FoodGame />
-          <Facts onStartHunt={handleStartHunt} onStartDateNight={handleStartDateNight} />
+          <Facts
+            onStartHunt={handleStartHunt}
+            onStartDateNight={handleStartDateNight}
+            onOpenVault={handleUnlockReward}
+          />
         </div>
       )}
 

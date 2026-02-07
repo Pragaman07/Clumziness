@@ -4,7 +4,7 @@ import { Book, Heart } from 'lucide-react';
 import Button from './ui/Button';
 import StoryBook from './StoryBook';
 
-const Facts = ({ onStartHunt, onStartDateNight }) => {
+const Facts = ({ onStartHunt, onStartDateNight, onOpenVault }) => {
     const [isBookOpen, setIsBookOpen] = useState(false);
 
     return (
@@ -94,6 +94,28 @@ const Facts = ({ onStartHunt, onStartDateNight }) => {
                             }}
                         >
                             Slot Machine 🎰
+                        </Button>
+                    </motion.div>
+
+                    <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        <Button
+                            onClick={onOpenVault}
+                            style={{
+                                fontSize: '1.2rem',
+                                padding: '1rem 2.5rem',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '1rem',
+                                background: '#fff',
+                                color: '#d946ef', // Fuchsia color for letters
+                                border: '2px solid #d946ef',
+                                boxShadow: '0 5px 15px rgba(217, 70, 239, 0.2)'
+                            }}
+                        >
+                            Letter Vault 💌
                         </Button>
                     </motion.div>
 
